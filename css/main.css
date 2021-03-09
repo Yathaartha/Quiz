@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; }
+
+.invisible {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.container {
+  margin: auto;
+  max-width: 1100px; }
