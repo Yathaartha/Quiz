@@ -9,63 +9,99 @@
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
-    <header id="main-title">
-      <h1>Intelligence Check!</h1>
-      <h3>Let's see how much do you know about anime...</h3>
-    </header>
+    <div class="visible" id="checkboxes">
+      <header id="main-title">
+        <h1>Intelligence Check!</h1>
+        <h3>Let's see how much do you know about anime...</h3>
+      </header>
 
-    <section class="questions">
-      <h3>Pick the anime titles that you think is real:</h3>
-      <form action="">
-        <input type="checkbox" name="anime1" id="anime1" class="correct" />
-        <label for="anime1">Shingeki No Kyojin</label><br />
-        <input type="checkbox" name="anime2" id="anime2" class="correct" />
-        <label for="anime2">Shokugeki No Soma</label><br />
-        <input type="checkbox" name="anime3" id="anime3" class="correct" />
-        <label for="anime3">Danmachi</label><br />
-        <input type="checkbox" name="anime4" id="anime4" class="incorrect" />
-        <label for="anime4">Legend of Hinata</label><br />
-        <input type="checkbox" name="anime5" id="anime5" class="correct" />
-        <label for="anime5">That time i got reincarnated as a slime</label
-        ><br />
-        <input type="checkbox" name="anime6" id="anime6" class="incorrect" />
-        <label for="anime6">I'm a devil part-timer, so what?</label><br />
-        <input type="checkbox" name="anime7" id="anime7" class="correct" />
-        <label for="anime7">Princess Connect Re: Dive</label><br />
-        <input type="checkbox" name="anime8" id="anime8" class="incorrect" />
-        <label for="anime8">Bokuno Senshou</label><br />
-        <input type="checkbox" name="anime9" id="anime9" class="incorrect" />
-        <label for="anime9">Memento</label><br />
-        <input type="checkbox" name="anime10" id="anime10" class="correct" />
-        <label for="anime10">Oregairu</label><br />
-        <input type="checkbox" name="anime11" id="anime11" class="correct" />
-        <label for="anime11">The saga of Tanya the evil</label><br />
-        <input type="checkbox" name="anime12" id="anime12" class="incorrect" />
-        <label for="anime12">Silhoutte</label><br />
-        <input type="checkbox" name="anime13" id="anime13" class="incorrect" />
-        <label for="anime13">Blood Circulator</label><br />
-        <input type="checkbox" name="anime14" id="anime14" class="correct" />
-        <label for="anime14">How not to summon a demon lord</label><br />
-        <input type="checkbox" name="anime15" id="anime15" class="incorrect" />
-        <label for="anime15">Boku wa Warui Slime ja nai</label><br />
-        <input type="checkbox" name="anime16" id="anime16" class="correct" />
-        <label for="anime16">Bakemonogatari</label><br />
-        <input type="checkbox" name="anime17" id="anime17" class="incorrect" />
-        <label for="anime17">Moshimonogatari</label><br />
-        <input type="checkbox" name="anime18" id="anime18" class="incorrect" />
-        <label for="anime18">Guren</label><br />
-        <input type="checkbox" name="anime19" id="anime19" class="correct" />
-        <label for="anime19"
-          >Kaguya Sama Wa Kokurasetai Tensai Tachi No Renai Zunousen</label
-        ><br />
-        <input type="checkbox" name="anime20" id="anime20" class="incorrect" />
-        <label for="anime20">Call of Silence</label><br />
-      </form>
-    </section>
+      <section class="questions">
+        <h3>Pick the anime titles that you think is real:</h3>
+        <form action="">
+          <input type="checkbox" name="anime1" id="anime1" class="correct" />
+          <label for="anime1">Shingeki No Kyojin</label><br />
+          <input type="checkbox" name="anime2" id="anime2" class="correct" />
+          <label for="anime2">Shokugeki No Soma</label><br />
+          <input type="checkbox" name="anime3" id="anime3" class="correct" />
+          <label for="anime3">Danmachi</label><br />
+          <input type="checkbox" name="anime4" id="anime4" class="incorrect" />
+          <label for="anime4">Legend of Hinata</label><br />
+          <input type="checkbox" name="anime5" id="anime5" class="correct" />
+          <label for="anime5">That time i got reincarnated as a slime</label
+          ><br />
+          <input type="checkbox" name="anime6" id="anime6" class="incorrect" />
+          <label for="anime6">I'm a devil part-timer, so what?</label><br />
+          <input type="checkbox" name="anime7" id="anime7" class="correct" />
+          <label for="anime7">Princess Connect Re: Dive</label><br />
+          <input type="checkbox" name="anime8" id="anime8" class="incorrect" />
+          <label for="anime8">Bokuno Senshou</label><br />
+          <input type="checkbox" name="anime9" id="anime9" class="incorrect" />
+          <label for="anime9">Memento</label><br />
+          <input type="checkbox" name="anime10" id="anime10" class="correct" />
+          <label for="anime10">Oregairu</label><br />
+          <input type="checkbox" name="anime11" id="anime11" class="correct" />
+          <label for="anime11">The saga of Tanya the evil</label><br />
+          <input
+            type="checkbox"
+            name="anime12"
+            id="anime12"
+            class="incorrect"
+          />
+          <label for="anime12">Silhoutte</label><br />
+          <input
+            type="checkbox"
+            name="anime13"
+            id="anime13"
+            class="incorrect"
+          />
+          <label for="anime13">Blood Circulator</label><br />
+          <input type="checkbox" name="anime14" id="anime14" class="correct" />
+          <label for="anime14">How not to summon a demon lord</label><br />
+          <input
+            type="checkbox"
+            name="anime15"
+            id="anime15"
+            class="incorrect"
+          />
+          <label for="anime15">Boku wa Warui Slime ja nai</label><br />
+          <input type="checkbox" name="anime16" id="anime16" class="correct" />
+          <label for="anime16">Bakemonogatari</label><br />
+          <input
+            type="checkbox"
+            name="anime17"
+            id="anime17"
+            class="incorrect"
+          />
+          <label for="anime17">Moshimonogatari</label><br />
+          <input
+            type="checkbox"
+            name="anime18"
+            id="anime18"
+            class="incorrect"
+          />
+          <label for="anime18">Guren</label><br />
+          <input type="checkbox" name="anime19" id="anime19" class="correct" />
+          <label for="anime19"
+            >Kaguya Sama Wa Kokurasetai Tensai Tachi No Renai Zunousen</label
+          ><br />
+          <input
+            type="checkbox"
+            name="anime20"
+            id="anime20"
+            class="incorrect"
+          />
+          <label for="anime20">Call of Silence</label><br />
+        </form>
+      </section>
 
-    <section id="submit">
-      <button id="submitBtn">Submit</button>
-      <button id="reset">Reset</button>
-    </section>
+      <section id="submit">
+        <button id="submitBtn">Submit</button>
+        <button id="reset">Reset</button>
+      </section>
+    </div>
+
+    <div class="invisible">
+      <div class="container" id="result"></div>
+    </div>
   </body>
 </html>
