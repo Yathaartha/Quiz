@@ -3,7 +3,7 @@ const submitBtn = document.getElementById("submitBtn");
 function submitBtnHandler() {
   let mrkList = document.querySelectorAll('input[type="checkbox"]:checked');
   const checklist = document.getElementById("checkboxes");
-  checklist.style.visibility = "hidden";
+  checklist.style.display = "none";
   let correctCount = 0;
   for (i = 0; i < mrkList.length; i++) {
     if (mrkList[i].className == "correct") {
@@ -34,9 +34,11 @@ function calculateScore(correctCount) {
     resultGrade = "F";
   }
   resultPrint.style.visibility = "visible";
-  resultPrint.innerHTML = `<h2>${correctCount * 10}</h2>
+  resultPrint.innerHTML = `<div class="container">
+  <h2>${correctCount * 10}</h2>
   <p>Your Grade: ${resultGrade}</p>
   <p>${resultText}</p>
+  </div>
   `;
 }
 
